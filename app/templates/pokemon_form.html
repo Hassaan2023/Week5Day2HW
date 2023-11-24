@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Pokemon Name</title>
+</head>
+<body>
+    <h2>Enter Pokemon Name</h2>
+    <form method="post" action="{{ url_for('pokemon') }}">
+        <label for="pokemon_name">Pokemon Name:</label>
+        <input type="text" id="pokemon_name" name="pokemon_name" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

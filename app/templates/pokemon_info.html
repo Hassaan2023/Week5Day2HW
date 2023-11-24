@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ name.capitalize() }} Information</title>
+</head>
+<body>
+    <h2>{{ name.capitalize() }} Information</h2>
+    <p>Base Stat for HP: {{ hp }}</p>
+    <p>Base Stat for Defense: {{ defense }}</p>
+    <p>Base Stat for Attack: {{ attack }}</p>
+    <p>Ability: {{ ability }}</p>
+    <img src="{{ front_shiny }}" alt="Front Shiny Image">
+    <a href="{{ url_for('pokemon') }}">Go Back</a>
+</body>
+</html>
+
